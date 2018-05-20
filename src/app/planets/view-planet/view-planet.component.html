@@ -1,0 +1,21 @@
+<div class="toolbar-header">
+  <button mat-mini-fab (click)="goBack()" matTooltip="Back">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+</div>
+<div class="container">
+  <mat-card>
+    <div class="planet-name">{{ planet?.name }}</div>
+    <mat-list role="list">
+        <mat-list-item role="listitem"><span><b>Created: </b></span>{{ !planet.created? '-' : planet.created | date}}</mat-list-item>
+        <mat-list-item role="listitem"><span><b>Population: </b></span>{{ !planet.population? '-' : planet.population}}</mat-list-item>
+        <mat-list-item role="listitem"><span><b>Gravity: </b></span>{{ !planet.gravity? '-' : planet.gravity}}</mat-list-item>
+        <mat-list-item role="listitem"><span><b>Climate: </b></span>{{ !planet.climate? '-' : planet.climate}}</mat-list-item>
+        <mat-list-item role="listitem"><span><b>Diameter: </b></span>{{ !planet.diameter? '-' : planet.diameter}}</mat-list-item>
+        <mat-list-item role="listitem"><span><b>Orbital period: </b></span>{{ !planet.orbital_period? '-' : planet.orbital_period}}</mat-list-item>
+        <mat-list-item role="listitem"><span><b>Rotation period: </b></span>{{ !planet.rotation_period? '-' : planet.rotation_period}}</mat-list-item>
+        <mat-list-item role="listitem"><span><b>Surface water: </b></span>{{ !planet.surface_water? '-' : planet.surface_water}}</mat-list-item>
+        <mat-list-item role="listitem"><span><b>Terrain: </b></span>{{ !planet.terrain? '-' : planet.terrain}}</mat-list-item>
+      </mat-list>
+  </mat-card>
+</div>
